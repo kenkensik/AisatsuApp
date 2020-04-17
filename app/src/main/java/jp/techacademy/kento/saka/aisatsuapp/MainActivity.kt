@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val timePickerDialog=TimePickerDialog(
                 this,
                 TimePickerDialog.OnTimeSetListener{Activity,hour,minute->
-                    if(hour>=2&&hour<=9){textView.text="おはよう"}
+                    if(hour>=2&&hour<=9){textView.text="Good morning"}
                     else if(hour>=10&&hour<=17){textView.text="こんにちは"}
                     else{textView.text="こんばんは"}},
                 13,0,true)
